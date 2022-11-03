@@ -1,0 +1,7 @@
+from django.shortcuts import render
+from django.http import HttpResponse;
+# Create your views here.
+def f22(request):
+   import time;
+   ss="<h2>Hello User..!!<br /><br />Server Date & Time :: "+str(time)+"</h2><hr/>"
+   return HttpResponse(ss);
